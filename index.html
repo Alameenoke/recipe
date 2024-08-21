@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My Recipe Website</title>
+        <style>
+            body{font-family: Georgia, 'Times New Roman', Times, serif;
+                 color: black;
+                background-color:gainsboro;}
+
+            header{
+                background-color: gray;
+                color: navy;
+                text-align: center;
+                font: 200;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                font-size: 20px;
+                padding-left: 60px;
+                }
+
+                a{color: aqua;
+                }
+
+                a:hover{text-decoration: underline;}
+                .intro{
+                    background-image: url(recipe\ background.jpg);
+                    text-align: center;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size: 100% 100%;
+                 }
+
+                 h2{padding-left: 60px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                 margin-right: 267px;
+                }
+
+                img{width: 400px;
+                height: auto;
+                border-top: 20px;
+                border-top-left-radius: 20px;
+                border: 40px;}
+
+            .card{
+                width: 400px;
+                height: auto;
+                background-color: grey;
+                border-radius: 10px;
+                text-align: center;
+                border-image: fill;
+                margin-left: 20px;
+                }
+
+            .grid{display: flex;
+                gap:20px;
+                }
+
+            form{margin-top: px;
+            }
+
+            label{
+            display: block;
+            margin: 40px 0 5px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border:20px;
+        }
+
+        input[type="text"], input[type="email"], textarea{
+            width: 70%;
+            padding: 10px;
+            margin: 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+            width: 60%;
+            font-size: 1em;
+            padding-left: 60px;
+            border-radius: 10px;}
+
+            button{
+            background-color: black;
+            color: gray;
+            border-radius: 10px;
+            width: 500px;
+            font-size: larger;
+            padding-left: 20px;
+            margin-right: 100px;
+            }
+
+            .contact-section{background-color: grey;
+             padding-left: 20px;
+             border-top: 1px black;
+             width: 70%;
+             margin-top: 40px;
+             border-radius: 10px;
+             box-shadow: 3px black;
+             display: flex;
+             justify-content: ceter;
+             align-items: center;
+             flex-direction: column;
+             margin-left: 150px;}
+
+             .Welcome{
+            margin-left: 160px;
+            margin-bottom: 20px;
+            margin-top: 1px;}
+
+             .fr{
+                margin-left: 450px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class=".header">
+            <h1>My Recipe Website</h1>
+        
+                <a href="#home"><strong>Home</strong></a>
+                <a href="#recipes"><strong>Recipes</strong></a>
+                <a href="#contact"><strong>contact</strong></a>
+            
+        </header>
+        <main class="main-content">
+            <section id="home" class="intro">
+                <h2 class="Welcome">Welcome To My Recipe Collection </h2  class="Welcome">
+                <p>Explore delicious Recipes that are easy to make and delightul to eat</p>
+                </section>
+
+            <h2 class="fr">Featured Recipes</h2>
+            <section id="Recipes">
+                <div class="grid">
+                    <div class="card">
+                        <img src="spagetti.jpg">
+                        <h3> Spaghetti Bolognese</h3>
+                        <p>A classic italian pasta with rich and savory sauce. </p>
+                </div>
+
+                <div class="card">
+                    <img src="chickencurry.jpg">
+                    <h3>Chicken Curry</h3>
+                    <P> A flavorful curry made with tender chicken and aromatic spices.</P>
+                </div>
+
+                <div class="card">
+                    <img src="chocolatecake.jpg">
+                    <h3>Chocolate Cake</h3>
+                    <p>A decadent dessert that's moist, rich, and topped with chocolate ganache</p>
+                </div>
+            </section>
+
+            <section id="contact"class="contact-section">
+            <section class="contact-section">
+                <div class="contact-section">
+                <h2 class="ft">Contact Me</h2>
+                
+                <form>    
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email"id="email"name="email" required>
+
+                <label for="n">Message:</label>
+                <input type="text" id="text"name="text" required>
+                <button type="submit">Send Message</button>
+                </div>
+                </form>
+            </div>
+                </section>
+        </main>
+        <footer class="footer" style="background-color: #333;
+        color: white; padding: 15px; justify-content: center;">
+            <p>&copy; My recipe website</p>
+        </footer>>
+
+    </body>
+</html>
